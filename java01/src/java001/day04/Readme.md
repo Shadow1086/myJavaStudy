@@ -42,3 +42,4 @@ int index = Arrays.binarySearch(arr, 3); // 使用Arrays类中的binarySearch方
 - T_arr03:数组的排序。使用了Arrays类中的sort方法。
 - T_arr04:例题：摘苹果。利用了排序，数组的直接赋值，以及增强for循环的使用。
 - T_arr05:数组的插入数据。分为三步骤：1.找位置，循环找位置。2.元素后移，倒着移动。3.重新赋值。
+- T_arr06:数组的删除数据。
