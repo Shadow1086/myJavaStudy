@@ -1,8 +1,6 @@
 package java001.day06.T_class03_Login;
 
-import java.util.Objects;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class T_main {
     public static void main(String[] args) {
@@ -15,29 +13,34 @@ public class T_main {
         userArr[0].username = "abc";
         userArr[0].password = "abc";
 
+        userArr[3] = new UserInfo();
+        userArr[3].username = "abc";
+        userArr[3].password = "abc";
+
         System.out.print("请输入用户名：");
         String username = input.next();
 
         System.out.print("请输入密码：");
         String password = input.next();
 
+        boolean flag = false;   //初始化为登陆失败
 
-        for(int i = 0;i<userArr.length;i++){
-            if(userArr[i] != null && userArr[i].username.equals(username)){
-                if(userArr[i].password.equals(password)){
+        for (int i = 0; i < userArr.length; i++) {
+            if (userArr[i] != null && userArr[i].username.equals(username)) {
+                if (userArr[i].password.equals(password)) {
                     System.out.println("success");
+                    flag = true;
                     break;
-                }
-                else{
+                } else {
                     System.out.println("password is wrong");
                     break;
                 }
-            }else{
+            }
+            if (flag != true) {
                 System.out.println("failure");
                 break;
             }
         }
-
 
 
     }
