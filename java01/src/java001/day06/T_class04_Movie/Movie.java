@@ -1,7 +1,4 @@
-package java001.day06.T_calss_Movie;
-
-import java.util.Scanner;
-import java.util.Arrays;
+package java001.day06.T_class04_Movie;
 
 public class Movie {
     String name , director;
