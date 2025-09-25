@@ -3,6 +3,7 @@ day06中的文件摘要：
 - [T_class01_Dog.java](T_class01_Dog.java)：一个简单的类，用于描述狗的属性和行为。
 - T_class02_Car.java：一个简单的类，用于描述汽车。
 - T_class03_Login.java：模拟用户登录的类。类的初始化和数组的结合。
+- T_class04_Movie.java：展示电影的基础信息。特点：类的属性中存在了数组类型。
 
 
 
