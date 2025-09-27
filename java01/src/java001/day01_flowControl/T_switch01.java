@@ -10,14 +10,12 @@ public class T_switch01 {
                 System.out.println("分支一");
                 break;
             case 20 :
-
                 System.out.println("分支二");
                 break;
             case 30 :
                 System.out.println("分支三");
                 break;
         }
-
     }
 
 }

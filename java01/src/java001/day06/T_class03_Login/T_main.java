@@ -23,7 +23,8 @@ public class T_main {
         System.out.print("请输入密码：");
         String password = input.next();
 
-        boolean flag = false;   //初始化为登陆失败
+        boolean flag = false;
+        //初始化为登陆失败
 
         for (int i = 0; i < userArr.length; i++) {
             if (userArr[i] != null && userArr[i].username.equals(username)) {
