@@ -16,7 +16,8 @@ public class Get_random {
         double d1 = Math.random();
         System.out.println("d1 = " + d1);
 
-        int num = (int) (Math.random() * 101);  //只有乘以101才能使范围变为[0 - 100]
+        int num = (int) (Math.random() * 101);
+        //只有乘以101才能使范围变为[0 - 100]
         System.out.println("num = " + num);
 
         int num1 = (int) (Math.random() * 100) + 1;
