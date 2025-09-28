@@ -1,6 +1,6 @@
 package Class01.Test;
 
-import Class01.Encapsulation04.Employee;
+import Class01.Encapsulation.Encapsulation04.Employee;
 
 /**
  * 一个无需交互输入的自动化测试类，直接构造多个 Employee 对象并打印信息。

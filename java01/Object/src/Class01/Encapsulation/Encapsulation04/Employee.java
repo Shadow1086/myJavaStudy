@@ -1,4 +1,4 @@
-package Class01.Encapsulation04;
+package Class01.Encapsulation.Encapsulation04;
 
 /**
  * ClassName: Practice01

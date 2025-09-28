@@ -1,7 +1,4 @@
-package Class01.Encapsulation01;
-
-import java.util.Scanner;
-import java.util.Arrays;
+package Class01.Encapsulation.Encapsulation01;
 
 /**
  * ClassName: Practice01

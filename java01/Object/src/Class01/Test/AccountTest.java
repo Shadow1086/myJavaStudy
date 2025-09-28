@@ -1,6 +1,6 @@
 package Class01.Test;
 
-import Class01.Constructor03.Account;
+import Class01.Constructor.Constructor03.Account;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

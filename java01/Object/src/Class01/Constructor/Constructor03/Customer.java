@@ -1,4 +1,4 @@
-package Class01.Constructor03;
+package Class01.Constructor.Constructor03;
 
 /**
  * ClassName: Practice01
