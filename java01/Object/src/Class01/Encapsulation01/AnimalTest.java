@@ -1,4 +1,4 @@
-package Class01.class01.Encapsulation01;
+package Class01.Encapsulation01;
 
 /**
  * ClassName: Practice01
@@ -9,7 +9,7 @@ package Class01.class01.Encapsulation01;
  * {@code @Version} 1.0
  */
 
-public class Encapsulation01 {
+public class AnimalTest {
     public static void main(String[] args) {
         Animal animal = new Animal();
         animal.name = "金蟾";

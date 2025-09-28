@@ -1,4 +1,4 @@
-package Class01.class01.Encapsulation01;
+package Class01.Encapsulation01;
 
 import java.util.Scanner;
 import java.util.Arrays;

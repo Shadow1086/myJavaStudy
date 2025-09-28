@@ -1,4 +1,4 @@
-package Class01.class01.Encapsulation02;
+package Class01.Encapsulation02;
 
 class Person {
     //属性
