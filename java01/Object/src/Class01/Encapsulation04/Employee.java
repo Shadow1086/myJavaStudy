@@ -37,11 +37,8 @@ public class Employee {
     }
 
     public void setSex(char sex){
-        if(sex =='男'||sex == '女'){
-            this.sex = sex;
-        }else{
-            System.out.println("输入性别有误");
-        }
+
+        this.sex = sex;
     }
     public char getSex(){
         return sex;

@@ -13,9 +13,11 @@ package Class01.Encapsulation02;
 
 public class PersonTest {
     public static void main(String[] args) {
-        Person p1 = new Person();
+        /*Person p1 = new Person();
         p1.setAge(46);
-        System.out.println("设置的年龄为：" + p1.getAge());
-    }
 
+        System.out.println("设置的年龄为：" + p1.getAge());*/
+        Person p2 = new Person(32);
+        System.out.println("设置的年龄为：" + p2.getAge());
+    }
 }
