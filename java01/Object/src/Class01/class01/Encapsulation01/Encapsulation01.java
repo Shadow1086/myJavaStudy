@@ -1,4 +1,4 @@
-package Class01.class01;
+package Class01.class01.Encapsulation01;
 
 /**
  * ClassName: Practice01
@@ -21,22 +21,3 @@ public class Encapsulation01 {
 
 }
 
-class Animal {
-    //属性：
-    String name;
-    private int legs;
-    //方法：
-    //设置legs的属性值
-    public void setlegs(int l) {
-        if (l >= 0 && l % 2 == 0) {
-            legs = l;
-        }else{
-            System.out.println("输入数据非法");
-        }
-    }
-
-    //获取legs值
-    public int getLegs() {
-        return legs;
-    }
-}
