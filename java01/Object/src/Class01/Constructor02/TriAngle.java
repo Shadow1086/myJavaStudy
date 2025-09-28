@@ -11,15 +11,15 @@ package Class01.Constructor02;
 
 public class TriAngle {
     //底边长
-    private int base;
+    private double base;
     //高
-    private int height;
+    private double height;
 
 //默认构造函数
     public TriAngle() {
     }
 
-    public TriAngle(int base, int height) {
+    public TriAngle(double base, double height) {
         if (base > 0) {
             this.base = base;
         } else {
@@ -32,7 +32,7 @@ public class TriAngle {
         }
     }
 
-    public void setBase(int base) {
+    public void setBase(double base) {
         if (base > 0) {
             this.base = base;
         } else {
@@ -40,7 +40,7 @@ public class TriAngle {
         }
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         if (height > 0) {
             this.height = height;
         } else {
@@ -48,17 +48,16 @@ public class TriAngle {
         }
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public int getBase() {
+    public double getBase() {
         return base;
     }
 
     public double area() {
-        double result = (double)(base * height) / 2;
-        return result;
+        return (base * height) / 2;
     }
 
 }
