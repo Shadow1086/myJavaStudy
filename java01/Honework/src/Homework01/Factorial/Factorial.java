@@ -24,9 +24,9 @@ public class Factorial {
                     System.out.print(i + " = ");
                 }
             }
-            System.out.print(recursion(num));
+            System.out.println(recursion(num));
         } else if (num == 0) {
-            System.out.println("用递归求0的阶乘结果：1");
+            System.out.println("用递归求0的阶乘结果：\n1");
         } else if (num < 0) {
             System.out.println("负数没有阶乘");
         } else {
@@ -63,9 +63,9 @@ public class Factorial {
                     System.out.print(i + " = ");
                 }
             }
-            System.out.print(result);
+            System.out.println(result);
         } else if (num == 0) {
-            System.out.println("用while循环语句求0的阶乘-结果：1");
+            System.out.println("用while循环语句求0的阶乘：\n1");
         } else if (num < 0) {
             System.out.println("负数没有阶乘");
         } else {
@@ -90,7 +90,7 @@ public class Factorial {
                     System.out.print(i + " = ");
                 }
             }
-            System.out.print(result);
+            System.out.println(result);
         } else if (num == 0) {
             System.out.println("用while循环语句求0的阶乘：\n1");
         } else if (num < 0) {
@@ -115,7 +115,7 @@ public class Factorial {
                     System.out.print(i + " = ");
                 }
             }
-            System.out.print(sum);
+            System.out.println(sum);
         } else if (num == 0) {
             System.out.println("用for循环语句求" + num + "的阶乘：\n1");
         } else {

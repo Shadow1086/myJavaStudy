@@ -17,19 +17,10 @@ public class T_main {
 
         System.out.println("请输入n:");
         int n = input.nextInt();
-        System.out.println("请输入你想调用的方法(1.递归 2.for 3.while 4.do-while):");
-        int fiction = input.nextInt();
-        if(fiction == 1){
-            Factorial.method(n);
-        }else if(fiction == 2){
-            Factorial.FactorialFor(n);
-        }else if(fiction == 3){
-            Factorial.FactorialWhile(n);
-        }else if(fiction == 4){
-            Factorial.FactorialDoWhile(n);
-        }else{
-            System.out.println("输入有误");
-        }
+        Factorial.method(n);
+        Factorial.FactorialFor(n);
+        Factorial.FactorialWhile(n);
+        Factorial.FactorialDoWhile(n);
         input.close();
     }
 
