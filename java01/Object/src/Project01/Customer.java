@@ -4,12 +4,14 @@ package Project01;
  * ClassName: Practice01
  * Package: java001.day05
  * Description:
+ *
+ * 客户类
  * {@code @Author} Liang-ht
  * {@code @Create} 2025/10/1 22:05
  * {@code @Version} 1.0
  */
 
-public class Costumer {
+public class Customer {
 //属性：
     private String name;
     private int age;
@@ -18,15 +20,20 @@ public class Costumer {
     private String email;
 
     //构造器
-    public Costumer() {
+    public Customer() {
     }
 
-    public Costumer(String name, int age, char sex, long tele, String phone, String email) {
+    public Customer(String name, int age, char sex, long tele, String phone, String email) {
         this.name = name;
         this.age = age;
         this.sex = sex;
         this.phone = phone;
         this.email = email;
+    }
+
+    public Customer(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     //初始化赋值
@@ -73,12 +80,5 @@ public class Costumer {
             System.out.println("输入的性别有误");
         }
 
-    }
-
-//方法：
-    //输出用户信息
-    public static void show(Costumer costumer) {
-        System.out.println(costumer.getName() + "\t" + costumer.getSex() + "\t" +
-                costumer.getAge() + "\t" + costumer.getPhone() + "\t" + costumer.getEmail());
     }
 }
