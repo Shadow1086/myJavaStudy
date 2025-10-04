@@ -48,5 +48,4 @@ class Son extends Father {
 //    public String getInfo(){
 //        return info;
 //    }
-
 }
