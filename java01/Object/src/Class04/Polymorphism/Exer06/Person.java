@@ -1,4 +1,4 @@
-package Class04.Exer06;
+package Class04.Polymorphism.Exer06;
 
 /**
  * ClassName: Person

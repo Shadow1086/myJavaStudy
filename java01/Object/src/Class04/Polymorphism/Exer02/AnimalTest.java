@@ -1,4 +1,4 @@
-package Class04.Exer02;
+package Class04.Polymorphism.Exer02;
 
 /**
  * ClassName: Practice01

@@ -1,4 +1,4 @@
-package Class04.Exer05;
+package Class04.Polymorphism.Exer05;
 
 /**
  * ClassName: java01

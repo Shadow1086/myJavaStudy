@@ -1,4 +1,4 @@
-package Class04.Exer04;
+package Class04.Polymorphism.Exer04;
 
 /**
  * ClassName: AnimalTest
