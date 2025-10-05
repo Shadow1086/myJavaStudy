@@ -56,3 +56,31 @@ public boolean equals(Object obj) {
 > 如何重写:
 > 手动自己实现
 > 调用IDEA自动实现（推荐）
+
+4 ToString()方法的调用
+4.1 toString()方法的说明
+* 说明：返回该对象的字符串表示
+* Object类中toString()方法的源码：
+```java
+public String toString() {
+    return getClass().getName() + "@" + Integer.toHexString(hashCode());
+}
+```
+* toString()方法的调用
+  > 1. println()方法中调用
+  > 2. 字符串连接操作中调用
+  > 3. 直接调用
+
+4.2 子类使用说明
+
+>自定义的类，在没有重写Object类的toString()方法时，调用toString()方法时，输出的是“类的全路径@对象的地址值的十六进制”。
+>像String,Date,File或包装类等Object的子类都重写了Object类中的toString()方法，用于输出对象的属性值。
+
+4.3 toString()方法的重写
+* 需求：输出对象的属性值
+* 解决：重写toString()方法
+* 重写toString()方法的注意事项：
+  > 1. 方法名必须是toString
+  > 2. 方法的返回值类型必须是String
+  > 3. 方法没有参数
+
