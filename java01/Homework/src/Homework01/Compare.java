@@ -1,4 +1,4 @@
-package Homework01.Homework02;
+package Homework01;
 
 import java.util.Scanner;
 //Java类和对象之构造方法与对象创建之比较大小：比较键盘输入的两个 double 型的数值的大小，输出较大的值（按照提示编写程序代码）
