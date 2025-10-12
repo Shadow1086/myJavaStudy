@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "DIMISSION",
         "Exer",
         "Liang"
     ],
@@ -8,5 +9,7 @@
             "autocomplete": false,
             "fixErrors": true
         }
-    }
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.explorer.showNonJavaResources": true
 }
