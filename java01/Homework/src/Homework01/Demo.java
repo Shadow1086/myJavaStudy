@@ -1,4 +1,6 @@
 package Homework01;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 /**
 * 任务：使用 instanceof 运算符判断所给对象是否为特定类的一个实例，并输出判断结果。
 */
@@ -6,6 +8,12 @@ package Homework01;
 public class Demo {
     public static void main(String[] args){
         Object hello = "Hello";
+        
+        //输出时间戳
+        SimpleDateFormat format = new SimpleDateFormat();
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println("time = " + format.format(date));
+
 
     // 判断hello是否是Object类的实例
         if(hello instanceof Object){
