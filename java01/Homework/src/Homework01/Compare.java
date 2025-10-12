@@ -60,6 +60,7 @@ class Main{
         // 调用比较大小的方法，获得较大的那个数
         
         // 不换行输出较大的那个数
+        System.currentTimeMillis();
         System.out.print("两个数中较大的是：" + compare.compareTo(num1, num2));
     }
 }
