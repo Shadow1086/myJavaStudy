@@ -1,5 +1,12 @@
 {
     "cSpell.words": [
-        "Exer"
-    ]
+        "Exer",
+        "Liang"
+    ],
+    "cursor.languageFeatures": {
+        "java": {
+            "autocomplete": false,
+            "fixErrors": true
+        }
+    }
 }
