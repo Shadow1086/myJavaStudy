@@ -1,5 +1,7 @@
 package Homework01;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 //Java类和对象之构造方法与对象创建之比较大小：比较键盘输入的两个 double 型的数值的大小，输出较大的值（按照提示编写程序代码）
 
@@ -60,7 +62,9 @@ class Main{
         // 调用比较大小的方法，获得较大的那个数
         
         // 不换行输出较大的那个数
-        System.currentTimeMillis();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println("time = " + format.format(date));
         System.out.print("两个数中较大的是：" + compare.compareTo(num1, num2));
     }
 }
