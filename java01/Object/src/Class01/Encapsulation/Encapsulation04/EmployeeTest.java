@@ -41,5 +41,6 @@ public class EmployeeTest {
             System.out.println((i+1) + "\t" + arrEm[i].getInfo());
         }
         System.out.println("----------员工列表完成----------");
+        input.close();
     }
 }
