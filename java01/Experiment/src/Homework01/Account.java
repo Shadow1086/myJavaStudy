@@ -14,7 +14,7 @@ import java.util.Scanner;
  * {@code @Version} 1.0
  */
 
-public class Account extends Details{
+public class Account{
     //声明属性
     private String account;
     private String name;
@@ -22,7 +22,7 @@ public class Account extends Details{
     private String personId;
     private double balance;
     // private Details[] details = new Details[5];
-    private Details details;
+    // private Details details;
     private static Scanner input = new Scanner(System.in);
 
     // 无参构造器
@@ -81,8 +81,7 @@ public class Account extends Details{
         double initBalance = input.nextDouble();
 
         if (balance < 0) {
-            System.out.println("输入余额有误，请重新输入");
-            initBalance = input.nextDouble();
+            System.out.println("输入余额有误");
             return null;
         }
         return new Account(initName, initId, initBalance);
@@ -95,7 +94,6 @@ public class Account extends Details{
         }else{
             balance += money;
             System.out.println("存入"+ money + "元，余额为：" + balance);
-
             // details.addRecord("存入"+ money + "元，余额为：" + balance);
         }
     }
@@ -120,7 +118,7 @@ public class Account extends Details{
         // System.out.println(this.toString());
         System.out.println(
             "------账户信息------"
-            +"账号     :" + account
+            +"\n账号     :" + account
             +"\n姓名     :"   + name
             +"\n身份证号 :"   + personId
             +"\n开户时间 :"   + time

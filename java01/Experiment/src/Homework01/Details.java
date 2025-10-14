@@ -1,20 +1,22 @@
-package Homework01;
+// package Homework01;
 
-public class Details {
+// import java.util.ArrayList;
 
-//交易金额
-    private double money;
-//交易后余额
-    private double balanceAfter;
-//交易时间
-    private String timestamp;
+// public class Details {
 
-    private String[] details;
+// //交易金额
+//     private double money;
+// //交易后余额
+//     private double balanceAfter;
+// //交易时间
+//     private String timestamp;
 
+//     // private String[] details;
+//     private ArrayList<String> arr = new ArrayList<>();
 
-    public String addRecord(double money,double balanceAfter,String timestamp){
+//     public String addRecord(double money,double balanceAfter,String timestamp){
         
-    }
+//     }
 
 
-}
+// }
