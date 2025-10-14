@@ -1,4 +1,4 @@
-package Homework01Instance;
+package Homework01.Homework01Instance;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

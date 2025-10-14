@@ -1,7 +1,5 @@
-package Homework01Test;
+package Homework01.Homework01Test;
 
-import Homework01.Account;
-import Homework01.Display01;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -11,6 +9,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import Homework01.HomeworkSource01.Account;
+import Homework01.HomeworkSource01.Display01;
 
 /**
  * 手写回归测试套件：运行 main() 可查看每个用例的期望值与实际值。
