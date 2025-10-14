@@ -1,3 +1,69 @@
+# Homework01Instance 模块说明
+
+本模块实现了一个简易的控制台版银行账户系统，涵盖账户开户、查询、存取款、查看交易明细以及销户等核心流程。下面对四个主要类的职责和它们之间的协作关系做详细说明。
+
+## Main
+
+- 定位：系统的唯一入口类。
+- 职责：仅包含 `main` 方法，实例化 `AccountManager` 并调用其 `start()` 方法。
+- 关系：把控制权交给 `AccountManager`，自身不处理任何业务逻辑。
+
+## AccountManager
+
+- 定位：控制台交互层，充当“界面控制器”。
+- 核心功能：
+  - 展示主菜单并读取用户输入。
+  - 根据选项调用开户、查询概要、存款、取款、查看交易明细、销户等流程。
+  - 维护一个 `List<Account>` 以管理所有开户的账户对象。
+- 关键协作：
+  - 调用 `Account.create()` 校验并生成新账户，成功后存入账户列表。
+  - 根据用户选择的账户对象，分别触发 `Account` 的业务方法，如 `deposit()`, `withdraw()`, `printSummary()`, `printTransactionHistory()`, `closeAccount()`, `markAsClosed()`。
+  - 使用内部的 `Scanner` 负责所有控制台输入读取，并提供 `readDouble()`、`readInt()` 作为复用的输入校验工具。
+
+## Account
+
+- 定位：领域层核心类，表示单个银行账户的完整状态与行为。
+- 核心字段：
+  - `accountNumber`：自动生成的账号。
+  - `ownerName`、`personalId`、`openTime`、`balance`：账户关键信息。
+  - `TransactionHistory history`：组合一个明细记录器，追踪所有操作。
+- 主要方法：
+  - `create(...)`：静态工厂，集中校验开户数据并返回 `Account` 实例。
+  - `deposit(...)` / `withdraw(...)`：处理存取款并写入交易明细。
+  - `printSummary()` / `printTransactionHistory()`：输出账户概要和所有交易记录。
+  - `closeAccount()` / `markAsClosed()`：处理销户流程及数据清理。
+  - Getter/Setter：暴露必要信息供 `AccountManager` 使用。
+- 与其他类的关系：
+  - 只被 `AccountManager` 持有并调用。
+  - 内部组合 `TransactionHistory`，负责把每次操作的日志委托给该类。
+
+## TransactionHistory
+
+- 定位：账户操作日志的存储与输出工具类。
+- 核心职责：
+  - 维护一个 `records` 列表，顺序记录格式化后的字符串。
+  - `addRecord(...)`：提供金额版与无金额版两种重载，生成统一格式的明细条目。
+  - `printAll()`：在控制台输出所有历史记录，无记录时给出友好提示。
+  - `clear()`：在账户销户时清空历史。
+- 与其他类的关系：
+  - 仅由 `Account` 持有并调用，外部不会直接接触。
+
+## 工作流程概览
+
+1. 运行 `Main.main()`，创建 `AccountManager` 并进入 `start()` 主循环。
+2. 用户通过菜单选择功能：
+   - 开户时，`AccountManager` 收集输入后调用 `Account.create()`；成功返回的账户被保存到列表。
+   - 存取款、查询概要、查询明细等操作均先由 `AccountManager` 让用户选择目标账户，再调用对应的 `Account` 方法。
+   - 销户流程由 `Account.closeAccount()` 给出确认提示，确认后 `Account.markAsClosed()` 清理数据并由 `AccountManager` 将账户对象移出列表。
+3. `Account` 在每次业务操作中调用 `TransactionHistory.addRecord()` 写入明细，或在用户查看明细时调用 `TransactionHistory.printAll()` 输出。
+
+总体而言：
+
+- `Main` 负责启动；
+- `AccountManager` 负责互动、调度和账户集合管理；
+- `Account` 聚合账户数据与业务规则；
+- `TransactionHistory` 专注记录历史，保持业务日志清晰可追溯。
+
 # myJavaStudy
 
 ## 项目简介
