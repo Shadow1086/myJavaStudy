@@ -76,7 +76,7 @@ public class Display01 {
         System.out.print("请输入账户id或持有人姓名：");
         String inputInfo = input.next();
         for (Account account : accountArr) {
-            if (account.getAccount() == inputInfo || account.getName().equalsIgnoreCase(inputInfo)) {
+            if (account.getAccount().equalsIgnoreCase(inputInfo) || account.getName().equalsIgnoreCase(inputInfo)) {
                 return account;
             }
         }
@@ -138,9 +138,10 @@ public class Display01 {
         System.out.println("----------------注销账户（请小心）---------------");
         Account account = selectAccount();
         if(account!=null){
-            account.cancelAccount();
-            accountArr.remove(account);
+            boolean flag = account.cancelAccount();
+            if(flag){
+                accountArr.remove(account);
+            }
         }
-        
     }
 }
