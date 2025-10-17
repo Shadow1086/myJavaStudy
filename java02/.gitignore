@@ -1,0 +1,45 @@
+# Compiled Java class files
+*.class
+
+# Build artifacts
+/target/
+/build/
+/bin/
+/out/
+*.jar
+*.war
+*.ear
+
+# IDE configuration files
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+.bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
