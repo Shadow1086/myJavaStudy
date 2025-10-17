@@ -1,4 +1,5 @@
 package Class03.thread.Thread02;
+
 /**
  * ClassName: Apply03
  * Description:
@@ -13,26 +14,34 @@ public class Apply03 {
 
     public static void main(String[] args) {
         // 3.   创建当前实现类的对象
-        PrintNumber printJi = new PrintNumber();
+        PrintNumberJi printJi = new PrintNumberJi();
         PrintNumberOu printOu = new PrintNumberOu();
         // 4.   将此对象作为参数传递到Thread类的构造器中，创建Thread类的实例
-        Thread thread = new Thread(printJi);
+        Thread thread = new Thread(printJi);   
         Thread thread1  =new Thread(printOu);
+
+        //通过调用Runnable匿名类的方式
+        new Thread(new Runnable(){
+            @Override
+            public void run(){
+            for (int i = 1; i <= 100; i += 2) {
+                System.out.println(Thread.currentThread().getName() + " : " + i);
+                }
+            }
+        }).start();
 
         // 5.   Thread类的实例调用start():1.启动线程，2.调用当前线程中的run()
         thread.start();
         thread1.start();
-
-        
-
     }
 
 }
-// 1.   创建一个实现Runnable接口的类
-class PrintNumber implements Runnable{
-// 2.   实现接口中的run()方法  ---->  将此线程要执行的操作，声明在此方法体内    
+
+// 1. 创建一个实现Runnable接口的类
+class PrintNumberJi implements Runnable {
+    // 2. 实现接口中的run()方法 ----> 将此线程要执行的操作，声明在此方法体内
     @Override
-    public void run(){
+    public void run() {
         for (int i = 1; i <= 100; i += 2) {
             System.out.println(Thread.currentThread().getName() + " : " + i);
         }
@@ -42,16 +51,11 @@ class PrintNumber implements Runnable{
 /*
  * 在创建一个新线程遍历偶数
  */
-class PrintNumberOu implements Runnable{
+class PrintNumberOu implements Runnable {
     @Override
-    public void run(){
+    public void run() {
         for (int i = 0; i <= 100; i += 2) {
             System.out.println(Thread.currentThread().getName() + " : " + i);
         }
     }
 }
-
-
-
-
-
