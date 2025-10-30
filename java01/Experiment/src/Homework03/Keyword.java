@@ -52,20 +52,21 @@ public class Keyword {
         Keyword.sort();
         int left = 0;
         int right = keywords.length - 1;
-        int mid = (left + right) / 2;
 
-        int num = str.compareTo(keywords[mid]);
         while (left <= right) {
+            int mid = (left + right) / 2;
+            int num = str.compareTo(keywords[mid]);
             if (num == 0) {
                 return mid;
             } else if (num > 0) {
-                left = mid - 1;
+                left = mid + 1;
             } else if (num < 0) {
-                right = mid + 1;
+                right = mid - 1;
             }
             mid = (left + right) / 2;
             num = str.compareTo(keywords[mid]);
         }
+
         return -1;
     }
 }
