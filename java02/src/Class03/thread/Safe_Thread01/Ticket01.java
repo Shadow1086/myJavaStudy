@@ -12,9 +12,9 @@ package Class03.thread.Safe_Thread01;
 public class Ticket01 {
     public static void main(String[] args) {
         SaleTicket saleTicket1 = new SaleTicket();
-
         SaleTicket saleTicket2 = new SaleTicket();
         SaleTicket saleTicket3 = new SaleTicket();
+
         Thread thread1 = new Thread(saleTicket1);
         thread1.setName("窗口1  ");
         Thread thread2 = new Thread(saleTicket2);
@@ -22,16 +22,15 @@ public class Ticket01 {
         Thread thread3 = new Thread(saleTicket3);
         thread3.setName("窗口3  ");
         thread1.start();
-        thread1.run();
 
         thread2.start();
-        thread2.run();
 
         thread3.start();
-        thread3.run();
     }
 }
-
+/*
+ * ------------线程的两种声明方式---------------
+ */
 class Window01 implements Runnable {
     @Override
     public void run() {
@@ -45,7 +44,7 @@ class Window02 extends Thread{
 
     }
 }
-
+//--------------
 class SaleTicket implements Runnable{
     int ticket = 100;
     @Override
