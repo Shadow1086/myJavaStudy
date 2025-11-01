@@ -4,6 +4,8 @@ package Class03.thread.Safe_Thread01;
  * Description:
  * 
  * 开启三个窗口售票，总票数为100张
+ * 通过实现Runnable接口的方式，实现卖票。------->存在线程安全问题
+ *  使用同步代码块解决上述卖票中的线程安全问题。
  * 
  * {@code @Author} Liang-ht
  * {@code @Create} 2025-10-17 20:42:16
@@ -12,14 +14,12 @@ package Class03.thread.Safe_Thread01;
 public class Ticket01 {
     public static void main(String[] args) {
         SaleTicket saleTicket1 = new SaleTicket();
-        SaleTicket saleTicket2 = new SaleTicket();
-        SaleTicket saleTicket3 = new SaleTicket();
 
         Thread thread1 = new Thread(saleTicket1);
         thread1.setName("窗口1  ");
-        Thread thread2 = new Thread(saleTicket2);
+        Thread thread2 = new Thread(saleTicket1);
         thread2.setName("窗口2  ");
-        Thread thread3 = new Thread(saleTicket3);
+        Thread thread3 = new Thread(saleTicket1);
         thread3.setName("窗口3  ");
         thread1.start();
 
@@ -47,14 +47,23 @@ class Window02 extends Thread{
 //--------------
 class SaleTicket implements Runnable{
     int ticket = 100;
+    Object object = new Object();
+
     @Override
     public void run(){
-        while (true) {
-            if(ticket > 0){
-                System.out.println(Thread.currentThread().getName() + "售票，票号为 : " + ticket);
-                ticket --;
-            }else{
-                break;
+        while(true){
+            try{
+                Thread.sleep(5);
+            }catch(InterruptedException e){
+                e.printStackTrace();
+            }
+            synchronized(this){
+                if(ticket > 0){
+                    System.out.println(Thread.currentThread().getName() + "售票，票号为 : " + ticket);
+                    ticket --;
+                }else{
+                    break;
+                }
             }
 
         }
