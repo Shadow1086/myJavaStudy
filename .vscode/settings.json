@@ -1,21 +1,49 @@
 {
-    "cSpell.words": [
-        "DIMISSION",
-        "Exer",
-        "Liang"
-    ],
-    "cursor.languageFeatures": {
-        "java": {
-            "autocomplete": false,
-            "fixErrors": true
-        }
-    },
-    "java.dependency.packagePresentation": "hierarchical",
-    "java.project.explorer.showNonJavaResources": true,
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m -Xlog:disable",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "java01/lib/hamcrest-core-1.3.jar",
-        "java01/lib/junit-4.13.1.jar"
-    ]
+  // Java 自动导入和组织导入设置
+  "java.completion.importOrder": [
+    "java",
+    "javax",
+    "org",
+    "com"
+  ],
+  // 自动添加未解析的导入
+  "java.configuration.updateBuildConfiguration": "automatic",
+  // 保存时自动组织导入
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  // Java 特定设置
+  "[java]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  
+  // ========== 文件隐藏配置（由 AI 助手添加）==========
+  // 隐藏文件浏览器中的文件（文件仍然存在，只是不显示）
+  // 注意：.vscode 目录下的所有文件不会被隐藏，始终显示
+  "files.exclude": {
+    "**/*.class": true,           // 隐藏所有编译后的 .class 文件
+    "**/bin/": true,               // 隐藏所有 bin 目录
+    "**/.DS_Store": true,         // 隐藏 macOS 系统文件
+    "**/__CREATED_BY_JAVA_LANGUAGE_SERVER__/": true,  // 隐藏 Java 语言服务器创建的目录
+    "**/.classpath": true,                             // 隐藏所有目录下的 Eclipse .classpath 文件
+    "**/.project": true,                               // 隐藏所有目录下的 Eclipse .project 文件
+    "**/.Ulysses-Groups.plist": true,                 // 隐藏 Ulysses 应用配置文件
+    "**/.Ulysses-Group.plist": true, 
+    "**/.Ulysses-Items.plist": true,
+    "**/.Ulysses-Tags.plist": true,
+    "**/.Ulysses-Notes.plist": true,
+    "**/.Ulysses-Settings.plist": true,               // 也隐藏 Ulysses-Settings.plist（如果存在）
+    "LICENSE": true,                                   // 隐藏根目录的 LICENSE 文件
+    "README.md": true,                                 // 隐藏根目录的 README.md
+    "README.en.md": true                               // 隐藏根目录的 README.en.md（注意：最后一个配置后没有逗号）
+  },
+  
+  // 隐藏搜索结果中的文件（可选，不影响文件浏览器）
+  "search.exclude": {
+    "**/bin": true,
+    "**/*.class": true
+  }
+  // ========== 文件隐藏配置结束 ==========
 }
