@@ -76,8 +76,19 @@ public class StringDemo2 {
         String s7 = s1+s2;
 
         System.out.println(s3 == s5);   //true
-
     }   
+    @Test
+    public void test05(){
+        String s1 = "hello";
+        String s2 = "world";
+        String s3 = s1.concat(s2);
+        String s4 = "hello".concat("world");
+        String s5 = s1.concat("world");
+
+        System.out.println(s3 == s4);   //false
+        System.out.println(s3== s5);    //false
+        System.out.println(s4 == s5);   //false
+    }
 }
 
 
