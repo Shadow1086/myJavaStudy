@@ -23,8 +23,6 @@
   // 隐藏文件浏览器中的文件（文件仍然存在，只是不显示）
   // 注意：.vscode 目录下的所有文件不会被隐藏，始终显示
   "files.exclude": {
-    "**/*.class": true,           // 隐藏所有编译后的 .class 文件
-    "**/bin/": true,               // 隐藏所有 bin 目录
     "**/.DS_Store": true,         // 隐藏 macOS 系统文件
     "**/__CREATED_BY_JAVA_LANGUAGE_SERVER__/": true,  // 隐藏 Java 语言服务器创建的目录
     "**/.classpath": true,                             // 隐藏所有目录下的 Eclipse .classpath 文件
@@ -44,6 +42,7 @@
   "search.exclude": {
     "**/bin": true,
     "**/*.class": true
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
   // ========== 文件隐藏配置结束 ==========
 }
