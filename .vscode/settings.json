@@ -13,5 +13,9 @@
         "java03/src"
     ],
     "java.import.gradle.enabled": false,
-    "java.import.maven.enabled": false
+    "java.import.maven.enabled": false,
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}"
+    },
+    "java.test.defaultConfig": "default"
 }
