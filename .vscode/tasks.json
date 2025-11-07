@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Clean Java Workspace",
+      "type": "shell",
+      "command": "echo 'Please reload VS Code window to apply Java project changes'",
+      "problemMatcher": []
+    }
+  ]
+}
+
+
+
