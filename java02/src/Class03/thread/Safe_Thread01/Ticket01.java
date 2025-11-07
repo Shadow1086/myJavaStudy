@@ -13,7 +13,7 @@ package Class03.thread.Safe_Thread01;
  */
 public class Ticket01 {
     public static void main(String[] args) {
-        SaleTicket saleTicket1 = new SaleTicket();
+        SaleTicket01 saleTicket1 = new SaleTicket01();
 
         Thread thread1 = new Thread(saleTicket1);
         thread1.setName("窗口1  ");
@@ -45,7 +45,7 @@ class Window02 extends Thread{
     }
 }
 //--------------
-class SaleTicket implements Runnable{
+class SaleTicket01 implements Runnable{
     int ticket = 100;
     Object object = new Object();
 

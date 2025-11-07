@@ -1,4 +1,4 @@
-package Class03.API.String01.First;
+package Class03.API.String01.Understand;
 /**
  * ClassName: StringDemo01
  * Description: 

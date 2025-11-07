@@ -10,7 +10,7 @@ package Class03.thread.Safe_Thread02;
  */
 public class Windows {
     public static void main(String[] args) {
-        SaleTicket s = new SaleTicket();
+        SaleTicket01 s = new SaleTicket01();
         Thread t1 = new Thread(s);
         Thread t2 = new Thread(s);
         Thread t3 = new Thread(s);
@@ -26,7 +26,7 @@ public class Windows {
     }
 }
 
-class SaleTicket implements Runnable{
+class SaleTicket01 implements Runnable{
     static int ticket = 100;
     boolean isFlag = true;
     @Override
