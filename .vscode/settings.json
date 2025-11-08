@@ -17,5 +17,6 @@
     "java.test.config": {
         "workingDirectory": "${workspaceFolder}"
   },
-    "java.test.defaultConfig": "default"
+    "java.test.defaultConfig": "default",
+    "java.debug.settings.onBuildFailureProceed": true
 }
