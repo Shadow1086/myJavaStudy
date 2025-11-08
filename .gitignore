@@ -6,6 +6,7 @@ Icon
 ._*
 .Spotlight-V100
 .Trashes
+*.Ulysses-group.plist
 
 # Java 编译文件
 *.class

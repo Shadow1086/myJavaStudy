@@ -1,8 +1,8 @@
 {
     "java.project.referencedLibraries": [
         "${workspaceFolder}/lib/**/*.jar"
-    ],
-    "java.configuration.updateBuildConfiguration": "automatic",
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic",
     "java.dependency.packagePresentation": "hierarchical",
     "java.project.sourcePaths": [
         "java01/src",
@@ -16,6 +16,6 @@
     "java.import.maven.enabled": false,
     "java.test.config": {
         "workingDirectory": "${workspaceFolder}"
-    },
+  },
     "java.test.defaultConfig": "default"
 }
