@@ -1,22 +1,23 @@
 {
-    "java.project.referencedLibraries": [
-        "${workspaceFolder}/lib/**/*.jar"
-  ],
-  "java.configuration.updateBuildConfiguration": "automatic",
-    "java.dependency.packagePresentation": "hierarchical",
     "java.project.sourcePaths": [
-        "java01/src",
-        "java01/Object/src",
-        "java01/Experiment/src",
-        "java01/Homework/src",
-        "java02/src",
-        "java03/src"
+        "src/main/java"
+    ],
+    "java.project.outputPath": "target/classes",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "/Volumes/study/Development/00_java/jdk-21.0.9+10/Contents/Home",
+            "default": true
+        }
     ],
     "java.import.gradle.enabled": false,
-    "java.import.maven.enabled": false,
-    "java.test.config": {
-        "workingDirectory": "${workspaceFolder}"
-  },
-    "java.test.defaultConfig": "default",
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.import.maven.enabled": true,
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.maven.userSettings": null,
+    "java.jdt.ls.java.home": "/Volumes/study/Development/00_java/jdk-21.0.9+10/Contents/Home"
 }

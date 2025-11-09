@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch JavaFX Application",
+            "request": "launch",
+            "mainClass": "JavaFX01.HelloJavaFX",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": [
+                "--module-path",
+                "/Volumes/study/Development/javafx-sdk-21.0.9/lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml"
+            ],
+            "classPaths": [
+                "${workspaceFolder}/bin"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}/java03/src"
+        },
+    ]
+}
+

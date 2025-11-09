@@ -1,14 +1,30 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Clean Java Workspace",
-      "type": "shell",
-      "command": "echo 'Please reload VS Code window to apply Java project changes'",
-      "problemMatcher": []
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile java03",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path",
+                "/Volumes/study/Development/javafx-sdk-21.0.9/lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml",
+                "-d",
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/java03/src/**/*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": "$javac"
+        }
+    ]
 }
-
-
-

@@ -48,6 +48,8 @@
 - [ ] 异常处理
 - [ ] 集合框架
 - [ ] 多线程编程
+- [x] GUI 编程 (AWT)
+- [x] JavaFX 图形界面
 
 ## 模块说明与联系
 
@@ -82,6 +84,13 @@
 4. 当需要查看历史时，`AccountManager` 再通过 `Account` 调用 `TransactionHistory#printAll()` 展示记录。
 
 > ✅ 推荐做法：一边阅读 `Homework01Instance` 的代码，一边尝试在 `Homework01` 中模仿实现；遇到不会写的功能，直接参考对应类/方法的注释说明，逐步填补自己的版本。
+
+### `java03/src/JavaFX01/`
+- JavaFX 图形界面学习模块
+- 包含基本的JavaFX应用程序示例
+- 已配置好JavaFX SDK 21环境
+- 运行方式：`cd java03/src/JavaFX01 && ./run.sh`
+- 学习内容：Application类、Stage、Scene、布局容器、UI组件、事件处理
 
 ## 注意事项
 - 所有代码都包含详细注释，便于学习理解
