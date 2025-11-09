@@ -74,7 +74,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>JavaFX01.HelloJavaFX</mainClass>
+                    <mainClass>com.myjavastudy.gui.javafx.HelloJavaFX</mainClass>
                     <!-- 指定模块路径，Maven会自动下载依赖，这里不需要手动指定SDK路径 -->
                     <jlinkImageName>myjavafxapp</jlinkImageName>
                     <launcher>startapp</launcher>

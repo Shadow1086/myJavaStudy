@@ -5,7 +5,7 @@
             "type": "java",
             "name": "Launch JavaFX Application",
             "request": "launch",
-            "mainClass": "JavaFX01.HelloJavaFX",
+            "mainClass": "com.myjavastudy.gui.javafx.HelloJavaFX",
             "cwd": "${workspaceFolder}",
             "vmArgs": [
                 "--module-path",
@@ -14,7 +14,7 @@
                 "javafx.controls,javafx.fxml"
             ],
             "classPaths": [
-                "${workspaceFolder}/bin"
+                "${workspaceFolder}/target/classes"
             ]
         },
         {
@@ -22,8 +22,11 @@
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "cwd": "${workspaceFolder}/java03/src"
-        },
+            "cwd": "${workspaceFolder}",
+            "classPaths": [
+                "${workspaceFolder}/target/classes"
+            ]
+        }
     ]
 }
 

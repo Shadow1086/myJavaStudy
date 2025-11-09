@@ -1,9 +1,9 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
+  "version": "2.0.0",
+  "tasks": [
+    {
             "label": "compile java03",
-            "type": "shell",
+      "type": "shell",
             "command": "javac",
             "args": [
                 "--module-path",
@@ -11,8 +11,8 @@
                 "--add-modules",
                 "javafx.controls,javafx.fxml",
                 "-d",
-                "${workspaceFolder}/bin",
-                "${workspaceFolder}/java03/src/**/*.java"
+                "${workspaceFolder}/target/classes",
+                "${workspaceFolder}/src/main/java/**/*.java"
             ],
             "group": {
                 "kind": "build",
@@ -25,6 +25,6 @@
                 "panel": "shared"
             },
             "problemMatcher": "$javac"
-        }
-    ]
+    }
+  ]
 }

@@ -1,7 +1,4 @@
 {
-    "java.project.sourcePaths": [
-        "src/main/java"
-    ],
     "java.project.outputPath": "target/classes",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
@@ -19,5 +16,13 @@
     "java.import.maven.enabled": true,
     "java.debug.settings.onBuildFailureProceed": true,
     "java.configuration.maven.userSettings": null,
-    "java.jdt.ls.java.home": "/Volumes/study/Development/00_java/jdk-21.0.9+10/Contents/Home"
+    "java.jdt.ls.java.home": "/Volumes/study/Development/00_java/jdk-21.0.9+10/Contents/Home",
+    "files.associations": {
+        "*.java": "java"
+    },
+    "java.configuration.maven.notCoveredPluginExecutionSeverity": "ignore",
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ]
 }
