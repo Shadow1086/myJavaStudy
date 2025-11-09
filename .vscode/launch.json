@@ -3,6 +3,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}",
+            "classPaths": [
+                "${workspaceFolder}/target/classes"
+            ]
+        },
+        {
+            "type": "java",
             "name": "Launch JavaFX Application",
             "request": "launch",
             "mainClass": "com.myjavastudy.gui.javafx.HelloJavaFX",
@@ -16,17 +26,8 @@
             "classPaths": [
                 "${workspaceFolder}/target/classes"
             ]
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "cwd": "${workspaceFolder}",
-            "classPaths": [
-                "${workspaceFolder}/target/classes"
-            ]
         }
     ]
 }
+
 
