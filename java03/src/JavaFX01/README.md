@@ -71,6 +71,20 @@ JavaFX由多个模块组成，根据需要添加：
 - `javafx.media`: 媒体播放
 - `javafx.graphics`: 图形和动画
 
+## IDE 配置说明
+
+### VS Code / Cursor 配置
+项目已配置VS Code设置文件：
+- `.vscode/settings.json` - Java项目配置和JavaFX库引用
+- `.vscode/launch.json` - 运行配置，支持JavaFX程序调试
+- `.vscode/tasks.json` - 编译任务配置
+
+### IDE 错误解决
+如果在IDE中仍看到JavaFX类无法解析的错误：
+1. 重新加载VS Code窗口 (`Ctrl+Shift+P` → "Developer: Reload Window")
+2. 确保Java扩展已安装并启用
+3. 检查 `.vscode/settings.json` 中的JavaFX路径是否正确
+
 ## 故障排除
 
 ### 编译错误
