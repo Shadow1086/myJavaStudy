@@ -26,23 +26,23 @@ public class CompareTest {
     }
     @Test
     public void test02(){
-        Product[] arr = new Product[5];
-        arr[0] = new Product("a", 1);
-        arr[1] = new Product("b", 2);
-        arr[2] = new Product("c", 3);
-        arr[3] = new Product("d", 4);
-        arr[4] = new Product("e", 5);
+        CompareProduct[] arr = new CompareProduct[5];
+        arr[0] = new CompareProduct("a", 1);
+        arr[1] = new CompareProduct("b", 2);
+        arr[2] = new CompareProduct("c", 3);
+        arr[3] = new CompareProduct("d", 4);
+        arr[4] = new CompareProduct("e", 5);
 
         Arrays.sort(arr);
-        for(Product product : arr){
+        for(CompareProduct product : arr){
             System.out.println(product.toString());
         }
     }
 }
-class Product implements Comparable{
+class CompareProduct implements Comparable{
     private String name;
     private double price;
-    public Product(String name,double price){
+    public CompareProduct(String name,double price){
         this.name = name;
         this.price = price;
     }
@@ -72,7 +72,7 @@ class Product implements Comparable{
         if(o == this){
             return 0;
         };
-        if(o instanceof Product product){
+        if(o instanceof CompareProduct product){
             int value =  Double.compare(this.price, product.price);
             if(value != 0){
                 return -value;
