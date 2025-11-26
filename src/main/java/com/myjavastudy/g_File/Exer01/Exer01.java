@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.Exer;
+package com.myjavastudy.g_File.Exer01;
 
 import java.io.File;
 import java.io.IOException;
