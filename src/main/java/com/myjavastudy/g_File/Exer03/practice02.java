@@ -22,7 +22,7 @@ public class practice02 {
             return;
         }else if(file.isFile()) {
             file.delete();
-        } else {
+        } else if(file.isDirectory()){
             File[] fileList = file.listFiles();
             for (File f : fileList) {
                 deleteDirectory(f);
