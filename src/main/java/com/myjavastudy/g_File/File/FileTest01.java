@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File;
+package com.myjavastudy.g_File.File;
 
 import org.junit.Test;
 

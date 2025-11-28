@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.Exer02;
+package com.myjavastudy.g_File.File.Exer02;
 
 import java.io.File;
 import java.io.FilenameFilter;
