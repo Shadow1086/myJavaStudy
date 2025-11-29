@@ -58,9 +58,13 @@ dist/
 nbdist/
 .nb-gradle/
 
-# VS Code / Cursor (可选，如果需要保留配置可以注释掉)
-# .vscode/
-# .cursor/
+# IDE 和 AI 工具规则文件
+.vscode/
+.cursor/
+.clinerules/
+.augment/
+.kilocode/
+.spec-workflow/
 
 # 日志文件
 *.log
@@ -88,7 +92,10 @@ gradle-app.setting
 !gradle-wrapper.jar
 !gradle-wrapper.properties
 
+# Node.js
+node_modules/
+package/
+
 # 其他
 *.orig
 *.rej
-
