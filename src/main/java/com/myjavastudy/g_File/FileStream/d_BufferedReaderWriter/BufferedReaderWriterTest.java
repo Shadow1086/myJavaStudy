@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.FileStream.BufferedReaderWriter;
+package com.myjavastudy.g_File.FileStream.d_BufferedReaderWriter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

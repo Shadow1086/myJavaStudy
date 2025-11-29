@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.FileStream.Compare;
+package com.myjavastudy.g_File.FileStream.c_Compare;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

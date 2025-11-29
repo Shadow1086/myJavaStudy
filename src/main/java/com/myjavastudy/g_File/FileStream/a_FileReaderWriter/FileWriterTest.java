@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.FileStream.FileReaderWriter;
+package com.myjavastudy.g_File.FileStream.a_FileReaderWriter;
 
 import java.io.File;
 import java.io.FileReader;
