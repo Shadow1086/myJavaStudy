@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.c_inputStreaReader.InputStreamtest;
+package com.myjavastudy.g_File.c_inputStreaReader;
 
 import java.io.File;
 import java.io.FileInputStream;
