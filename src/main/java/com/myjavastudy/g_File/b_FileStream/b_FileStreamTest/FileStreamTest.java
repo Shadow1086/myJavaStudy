@@ -1,4 +1,4 @@
-package com.myjavastudy.g_File.FileStream.b_FileStreamTest;
+package com.myjavastudy.g_File.b_FileStream.b_FileStreamTest;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
