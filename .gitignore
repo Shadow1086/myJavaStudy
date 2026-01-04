@@ -6,7 +6,10 @@ Icon
 ._*
 .Spotlight-V100
 .Trashes
+
+# Ulysses 编辑器配置
 .Ulysses-Group.plist
+.Ulysses-Settings.plist
 
 # Java 编译文件
 *.class
@@ -95,6 +98,7 @@ gradle-app.setting
 # Node.js
 node_modules/
 package/
+*.tgz
 
 # 其他
 *.orig
